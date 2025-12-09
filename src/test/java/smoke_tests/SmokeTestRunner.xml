@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BATCH 343 API SUITE">
+    <test verbose="2" preserve-order="true" name="API SMOKE TESTS">
+        <classes>
+            <class name="smoke_tests.TC01_CreateBooking"></class>
+            <class name="smoke_tests.TC02_GetBooking"></class>
+            <class name="smoke_tests.TC03_UpdateBooking"></class>
+            <class name="smoke_tests.TC04_PartiallyUpdateBooking"></class>
+            <class name="smoke_tests.TC05_DeleteBooking"></class>
+        </classes>
+    </test>
+</suite>
