@@ -32,8 +32,8 @@ public class RequestResponse {
     public void test01() {
         String url = "https://petstore.swagger.io/v2/pet/5";
         Response response = given().when().get(url);
-        response.prettyPrint();
-        response.print();
+       // response.prettyPrint();
+       // response.print();
 
         System.out.println("response.statusCode() = " + response.statusCode());
         System.out.println("response.contentType() = " + response.contentType());
