@@ -1,0 +1,39 @@
+1. equalTo()
+İki değerin birbirine tamamen eşit olup olmadığını kontrol eder. Sayılar, metinler, nesneler gibi tüm veri tipleri için kullanılabilir.
+
+2. equalToIgnoringCase()
+İki metni karşılaştırırken büyük harf-küçük harf ayrımı yapmadan eşitlik kontrolü yapar. "MERHABA" ile "merhaba" aynı kabul edilir.
+
+3. not()
+Bir koşulun tersini kontrol eder. Yani belirtilen durumun yanlış/gerçekleşmemiş olmasını bekler. Olumsuzlama operatörü gibi çalışır.
+
+4. containsString()
+Bir metin içinde aranan kelimenin, ifadenin veya karakterlerin var olup olmadığını kontrol eder. Metnin herhangi bir yerinde geçmesi yeterlidir.
+
+5. startsWith()
+Bir metnin belirtilen kelime, harf veya karakter dizisiyle başlayıp başlamadığını kontrol eder. Sadece metnin başlangıcına bakar.
+
+6. endsWith()
+Bir metnin belirtilen kelime, harf veya karakter dizisiyle bitip bitmediğini kontrol eder. Sadece metnin sonuna bakar.
+
+7. hasSize()
+Bir koleksiyonun (liste, dizi, set vb.) kaç eleman içerdiğini kontrol eder. Beklenen eleman sayısıyla gerçek eleman sayısını karşılaştırır.
+
+8. hasItem()
+Bir koleksiyonun içinde belirli bir elemanın bulunup bulunmadığını kontrol eder. Tek bir eleman arar.
+
+9. hasItems()
+Bir koleksiyonun içinde birden fazla belirtilen elemanın hepsinin bulunup bulunmadığını kontrol eder. Tüm aranan elemanlar koleksiyonda olmalıdır.
+
+10. anyOf()
+Verilen koşullardan en az birinin doğru olmasını bekler. "VEYA" mantığıyla çalışır. Herhangi bir koşul sağlanırsa test geçer.
+
+11. allOf()
+Verilen koşulların tamamının aynı anda doğru olmasını bekler. "VE" mantığıyla çalışır. Tüm koşullar sağlanmalıdır.
+
+12. greaterThan(), greaterThanOrEqualTo(), lessThan(), lessThanOrEqualTo()
+Sayısal değerleri matematiksel olarak karşılaştıran metotlardır:
+greaterThan(): Büyüktür (>)
+greaterThanOrEqualTo(): Büyük eşittir (≥)
+lessThan(): Küçüktür (<)
+lessThanOrEqualTo(): Küçük eşittir (≤)

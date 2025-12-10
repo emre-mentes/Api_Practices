@@ -38,6 +38,10 @@ public class Get05 extends PetStoreBaseUrl {
         Listenin ilk elemanının tags - id değeri 0 olmalı
  */
 
+
+
+
+
     @Test
     public void test01() {
         // 1)Set the url = > API endpointi ayarlayin
@@ -47,6 +51,7 @@ public class Get05 extends PetStoreBaseUrl {
         // 2)Set the expected data =>Gereksinimlere göre Beklenen datayi ayarlayin
         // 3)Send request get response =>İstegi gönderin ve response u alin
         // 4)Do assertion =>Dogrulamalar yapin
+
         given(spec)
                 .when()
                 .get("{first}/{second}")
