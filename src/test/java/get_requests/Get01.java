@@ -1,5 +1,6 @@
 package get_requests;
 
+import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
@@ -22,9 +23,13 @@ public class Get01 {
     @Test
     public void test01() {
 
+
         //1- Set the url
         String url = "https://petstore.swagger.io/v2/pet/5";
+
         //2- Set the expected data / payload
+
+
         //3- Send request get response
         Response response = given().when().get(url);
 
@@ -45,8 +50,11 @@ public class Get01 {
 
         //1- Set the url
         String url = "https://petstore.swagger.io/v2/pet/5";
+
         //2- Set the expected data / payload
+
         //3- Send request get response
+
         // 4- Do assertion
         given()
                 .when()

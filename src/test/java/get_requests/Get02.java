@@ -7,6 +7,9 @@ import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.containsString;
+import static org.hamcrest.Matchers.not;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 public class Get02 {
      /*
@@ -26,12 +29,12 @@ public class Get02 {
             Server değeri "Jetty(9.2.9.v20150224)" olmalı
 */
 
+
     @Test
     public void test01() {
 
         //set the url
         String url = "https://petstore.swagger.io/v2/pet/0";
-
         //set the expected data / payload
         //send request get response
         //do assertion
@@ -72,6 +75,7 @@ public class Get02 {
                 .when()
                 .get(url);
         response.prettyPrint();
+
         Assert.assertTrue(response.asString().contains("Pet not found"));
         Assert.assertFalse(response.asString().contains("TechProEd"));
 
