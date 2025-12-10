@@ -50,8 +50,11 @@ public class Get01 {
 
         //1- Set the url
         String url = "https://petstore.swagger.io/v2/pet/5";
+
         //2- Set the expected data / payload
+
         //3- Send request get response
+
         // 4- Do assertion
         given()
                 .when()
