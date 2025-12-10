@@ -41,7 +41,6 @@ public class Get05 extends PetStoreBaseUrl {
 
 
 
-
     @Test
     public void test01() {
         // 1)Set the url = > API endpointi ayarlayin
