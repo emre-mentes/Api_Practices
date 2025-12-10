@@ -20,6 +20,8 @@ public class Get07 extends ContactListBaseUrl {
         Content Type "application/json" olmalı
  */
 
+
+
     @Test
     public void test01() {
         //        1) Set the url => API endpointi ayarlayin
