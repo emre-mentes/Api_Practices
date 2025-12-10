@@ -38,6 +38,7 @@ public class Post01 extends PetStoreBaseUrl {
             Content Type "application/json" olmalı
      */
 
+
     @Test
     public void test01() {
         // 1)Set the url = > API endpointi ayarlayin

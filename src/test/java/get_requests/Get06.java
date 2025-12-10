@@ -3,8 +3,11 @@ package get_requests;
 import baseurl.HerOkuAppBaseUrl;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
+import org.hamcrest.Matchers;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import java.io.InputStream;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.containsString;
@@ -35,12 +38,13 @@ public class Get06 extends HerOkuAppBaseUrl {
                 }
      */
 
+
     @Test
     public void test01() {
 
 
 
-        spec.pathParams("first", "booking", "second", 499);
+        spec.pathParams("first", "booking", "second", 249);
 
         given()
                 .spec(spec)
@@ -63,7 +67,6 @@ public class Get06 extends HerOkuAppBaseUrl {
     public void test02() {
         // 1)Set the url = > API endpointi ayarlayin
         spec.pathParams("first", "booking", "second", 3158);
-
 
         // 2)Set the expected data =>Gereksinimlere göre Beklenen datayi ayarlayin
         // 3)Send request get response =>İstegi gönderin ve response u alin
