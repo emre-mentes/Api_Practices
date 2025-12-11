@@ -85,4 +85,6 @@ public class Post02 extends JsonPlaceHolderBaseUrl {
                 .then()
                 .statusCode(201);
 
+        response.prettyPrint();
+
     }}
