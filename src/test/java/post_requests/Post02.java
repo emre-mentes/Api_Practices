@@ -3,8 +3,6 @@ package post_requests;
 import baseurl.JsonPlaceHolderBaseUrl;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -14,7 +12,6 @@ import java.util.Map;
 import static io.restassured.RestAssured.given;
 
 public class Post02 extends JsonPlaceHolderBaseUrl {
-    private static final Logger log = LoggerFactory.getLogger(Post02.class);
 
 
   /*
@@ -54,7 +51,6 @@ public class Post02 extends JsonPlaceHolderBaseUrl {
              "             \"completed\": false\n" +
              "           }";
     */
-
         Map<String, Object> payload = new HashMap<>();
         payload.put("userId", 55);
         payload.put("title", "Tidy your room");
@@ -63,7 +59,6 @@ public class Post02 extends JsonPlaceHolderBaseUrl {
 
         // 3) Send request get response => İstegi gönderin ve response u alin
         Response response = given(spec).body(payload).when().post("{first}");
-
 
         /*
         Serialization ==> Java datalarimizin Json datalarina dönüstürülmesi islemidir
