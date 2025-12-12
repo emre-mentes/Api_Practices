@@ -22,6 +22,20 @@ public class Delete01 extends JsonPlaceHolderBaseUrl {
         And Response body is { }
     */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     @Test
     public void test01() {
         // 1) Set the url => API endpointi ayarlayin
