@@ -48,6 +48,7 @@ public class Post05 extends HerOkuAppBaseUrl {
                 }
      */
 
+
     @Test
     public void test01() {
         // 1) Set the url => API endpointi ayarlayin
