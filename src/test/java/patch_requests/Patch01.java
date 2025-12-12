@@ -30,6 +30,7 @@ public class Patch01 extends JsonPlaceHolderBaseUrl {
               }
      */
 
+
     @Test
     public void test01() {
         // 1) Set the url => API endpointi ayarlayin
