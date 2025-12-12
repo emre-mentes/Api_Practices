@@ -2,6 +2,7 @@ package post_requests;
 
 import baseurl.JsonPlaceHolderBaseUrl;
 import io.restassured.response.Response;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import pojos.JsonPlaceHolderPayloadPojo;
 
@@ -31,6 +32,7 @@ public class Post04 extends JsonPlaceHolderBaseUrl {
             "id": 201
         }
      */
+
 
     @Test
     public void test01() {
