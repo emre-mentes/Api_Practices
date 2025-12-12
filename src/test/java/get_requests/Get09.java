@@ -3,6 +3,7 @@ package get_requests;
 import baseurl.HerOkuAppBaseUrl;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.HashMap;
@@ -34,10 +35,11 @@ public class Get09 extends HerOkuAppBaseUrl {
 }
  */
 
+
     @Test
     public void test01() {
         // 1) Set the url => API endpointi ayarlayin
-        spec.pathParams("first", "booking", "second", 2806);
+        spec.pathParams("first", "booking", "second", 2817);
 
         // 2) Set the expected data =>Gereksinimlere göre Beklenen datayi ayarlayin
         Map<String, String> bookingdates = new HashMap<>();
