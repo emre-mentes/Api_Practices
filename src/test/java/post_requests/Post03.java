@@ -4,6 +4,7 @@ import baseurl.JsonPlaceHolderBaseUrl;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.response.Response;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import utilities.ReusableMethods;
 
@@ -33,13 +34,6 @@ public class Post03 extends JsonPlaceHolderBaseUrl {
             }
      */
 
-    @Test
-    public void testName() {
-        spec.pathParam("first", "todos");
-
-
-
-    }
 
     //reusable method kullanimi
     @Test
@@ -49,7 +43,6 @@ public class Post03 extends JsonPlaceHolderBaseUrl {
 
         // 2) Set the expected data =>Gereksinimlere göre Beklenen datayi ayarlayin
         Map<String, Object> expectedData =  ReusableMethods.jsonToMap("{\"userId\": 55,\"title\": \"Tidy your room\",\"completed\": false}");
-
 
         // 3) Send request get response => İstegi gönderin ve response u alin
         Response response = given(spec).body(expectedData).when().post("{first}");
