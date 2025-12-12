@@ -33,6 +33,14 @@ public class Post03 extends JsonPlaceHolderBaseUrl {
             }
      */
 
+    @Test
+    public void testName() {
+        spec.pathParam("first", "todos");
+
+
+
+    }
+
     //reusable method kullanimi
     @Test
     public void test01() throws JsonProcessingException {
